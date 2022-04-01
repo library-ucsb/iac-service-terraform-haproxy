@@ -4,12 +4,12 @@ provider "tfe" {}
 ## GitHub
 terraform {
 
-  # cloud {
-  #   organization    = "library-ucsb-core"
-  #   workspaces {
-  #     name          = ""
-  #   }
-  # }
+  cloud {
+    organization    = "library-ucsb-core"
+    workspaces {
+      name          = "iac-service-terraform-haproxy"
+    }
+  }
 
   required_providers {
     tfe = {
